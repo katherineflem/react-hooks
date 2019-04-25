@@ -16,12 +16,12 @@ const Albums = () => {
     return (
         <div className="list-group">
             {albums.map(album => (
-                <>
-                    <li key={album.id} className='list-group-item border-primary bg-light mb-2'>
+
+                <li key={album.id} className='list-group-item border-primary bg-light mb-2'>
                     <h4>{album.title}</h4>
-                        <Link className='list-group-item' to={`/${album.id}/details`}>More details</Link>
-                    </li>
-                </>
+                    <Link className='list-group-item btn ' to={`/${album.id}/details`}>More details</Link>
+                </li>
+
             ))}
         </div>
 
